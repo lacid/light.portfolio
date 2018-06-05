@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer');
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.heading {
+  font-family: 'IM Fell Great Primer', serif;
+  text-align: right;
+  margin-right: 30px;
+  padding-top: 35px;
+}
+
+.logo {
+  background-image: url("img/logo.off.png");
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  transition: 1s all;
+  margin-left: 30px;
+}
+
+.logo:hover {
+  background-image: url("img/logo.on.png");
+}
+
+/* Content */
+
+hr {
+  margin: 0 0 30px 0;
+  border: none;
+  color: black;
+  height: 1px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+}
+
+h2 {
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin-top: 40px;
+}
+
+article, section {
+    margin: 1em;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+#self {
+  background-image: url("img/ladislav.balicky.jr.bk.jpg");
+  background-size: 160px;
+  display: inline-block;
+  float: left;
+  margin-left: 0;
+  height: 285px;
+  width: 160px;
+  transition: 1s all;
+}
+
+#self:hover {
+  background-image: url("img/ladislav.balicky.jr.jpg");
+  transform: scale(1.01);
+}
+
+.fill-txt {
+  line-height: 25px;
+  text-align: center;
+}
+
+.cover {
+  padding: 3px;
+  width: 25%;
+}
+
+/*  Media Queries  */
+
+@media screen and (max-width: 1000px) {
+  .cover {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .cover {
+    display: block;
+    width: 100%;
+  }
+
+  header {
+    flex-wrap: nowrap;
+  }
+}
+
+/* Footer */
+
+.address {
+  font-style: italic;
+  text-align: center;
+  margin-top: 40px;
+  color: darkgrey;
+}
+
+.icon {
+  margin: 5px;
+}
+
+footer {
+  color: darkgrey;
+  font-size: 11px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
