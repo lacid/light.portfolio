@@ -72,9 +72,9 @@ article, section {
   background-image: url("img/ladislav.balicky.jr.bk.jpg");
   background-size: 160px;
   display: inline-block;
-  float: left;
+  float: left;       /* please avoid use of float or block instead use flexbox */
   margin-left: 0;
-  height: 285px;
+  height: 285px;    /* incase of responsive layout set the height to auto */
   width: 160px;
   transition: 1s all;
 }
