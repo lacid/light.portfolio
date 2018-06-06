@@ -10,7 +10,7 @@ html {
 
 body {
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 /* Header */
@@ -61,7 +61,7 @@ article, section {
     margin: 1em;
 }
 
-section {
+.resp-sq {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
